@@ -1,0 +1,91 @@
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  padding: 36px 36px 100px 36px;
+  grid-template-rows: 1fr 7fr;
+}
+
+#chat {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 350px;
+  height: 100%;
+  position: relative;
+}
+
+#messages::-webkit-scrollbar{
+  display: none;
+}
+
+#form {
+  bottom: 0;
+  display: flex;
+  height: 48px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  background: rgba(35, 35, 35, 1);
+  outline: 1px solid #aaa;
+}
+
+#messages {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100%;
+  scroll-behavior: smooth;
+  padding-bottom: 60px;
+  list-style: none;
+}
+
+#messages>li {
+  padding: .5rem 1rem;
+}
+
+#messages>li>p{
+  margin: .5rem 0;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+#messages>li:nth-child(odd) {
+  background: #222;
+}
+
+#input {
+  border-radius: 99999px;
+  border: 1px solid #eee;
+  flex: 1;
+  margin: 4px;
+  padding: 0 12px;
+}
+
+#input:focus {
+  outline: 0;
+}
+
+#form>button {
+  background: #09f;
+  color: #fff;
+  border: 0;
+  margin: 4px;
+  border-radius: 4px;
+}
