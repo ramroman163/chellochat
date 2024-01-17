@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./server/index.js",
   "scripts": {
+    "start": "node ./server/index.js",
     "dev": "node --watch ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +18,8 @@
     "express": "4.18.2",
     "morgan": "1.10.0",
     "socket.io": "4.7.3"
+  },
+  "repository": {
+    "url": "https://github.com/ramroman163/chellochat"
   }
 }
