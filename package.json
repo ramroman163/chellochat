@@ -1,12 +1,12 @@
 {
   "name": "chat",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
-  "main": "./server/index.js",
+  "description": "",
+  "main": "./server/index.mjs",
   "scripts": {
-    "start": "node ./server/index.js",
-    "dev": "node --watch ./server/index.js",
+    "start": "node ./server/index.mjs",
+    "dev": "node --watch ./server/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
