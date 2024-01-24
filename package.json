@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "./server/index.mjs",
+  "main": "server/index.mjs",
   "scripts": {
-    "start": "node ./server/index.mjs",
-    "dev": "node --watch ./server/index.mjs",
+    "start": "node server/index.mjs",
+    "dev": "node --watch /server/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
